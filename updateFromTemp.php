@@ -13,6 +13,7 @@ foreach ($uniqueInF2 in $file) {
   } else if (is_dir(dst)) {
     rmdir($dst); # removes folder if empty (ensure propper sorting of $uniqueInF2 to ensure all files are deleted in prior iterations of the loop)
   }
+  # how to treat symlinks???
 }
 
 ?>
