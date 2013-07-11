@@ -54,7 +54,7 @@ echo "Sum double=". $sum/1024/1024/1024 . "GB\n";
 echo "start copying";
 foreach ($uniqueInF1 as $file) {
   $src=$prefixF1 . "/" . substr($file,2,strlen($file)-3);
-  $dst=$tmpFolder. "/" . substr($file,2,strlen($file)-3);
+  $dst=$tmpFolderF1. "/" . substr($file,2,strlen($file)-3);
   echo "processing ".$src."\n";
 
   if (is_dir($src)) {

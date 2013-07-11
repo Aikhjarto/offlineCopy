@@ -14,12 +14,14 @@ Usage
 * use "find . > left.list" in source folder
 * use "find . > right.list" in destination folder
 * adjust settings,php that 
-** $prefixF1 points to source forlder (only needed for  creatiion of  temp folder)
-** $prefixF2 points to destination folder  (only needed for applying temp folder  to destination)
+** $prefixF1 points to source folder (only needed for  creation of temp folder on source machine)
+** $prefixF2 points to destination folder  (only needed for applying temp folder to destination on target machine)
 ** $tmpFolder to point to a folder on your external harddisk/thumbdrive 
 * run "php copyToTmp.php" to copy missing files to temp
 * move external harddisk to destination computer
 * run "php applyTemp.php" 
+
+Best practice is to keep left.list and right.list as well as these scripts on your external drive.
 
 Prerequisites
 =============
