@@ -8,6 +8,10 @@ list($uniqueInF1,$uniqueInF2,$double)=getArraysFromSource();
 
   # how to treat symlinks???
 
+# TODO: show filesize that will be freed
+# TODO: implement a pause to avoid accidentely deleting files
+# TODO: implement a recycle bin like behavior (move files rather than deleting)
+
 # purge old files
 foreach ($uniqueInF2 in $file) {
   $dst=$prefixF2. "/" . substr($file,2,strlen($file)-3);
