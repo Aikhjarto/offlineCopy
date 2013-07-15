@@ -1,6 +1,6 @@
 <?php
-$ret=function getArraysFromSource() {
-include 'settings.php'
+function getArraysFromSource() {
+include 'settings.php';
 
 $f1=fopen("left.list",'r');
 $f2=fopen("right.list",'r');
